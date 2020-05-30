@@ -1,4 +1,4 @@
-package com.dfmmorse
+package com.morenn.morse
 
 import android.content.Context
 import android.os.Bundle

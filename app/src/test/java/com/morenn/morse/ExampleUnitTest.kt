@@ -1,4 +1,4 @@
-package com.dfmmorse
+package com.morenn.morse
 
 import org.junit.Test
 
