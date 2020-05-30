@@ -1,0 +1,60 @@
+lt application files
+/*/build/
+
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle generated files
+.gradle/
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/libraries/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/profiles_settings.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+*.iml
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.idea/gradle.xml
+
+.idea/codeStyles/Project.xml
+
+.idea/runConfigurations.xml
+
+.idea/caches/build_file_checksums.ser
+
+app/app.iml
+build/intermediates/lint-cache/maven.google/androidx/appcompat/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/cardview/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/constraintlayout/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/core/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/legacy/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/test/espresso/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/test/group-index.xml
+build/intermediates/lint-cache/maven.google/androidx/vectordrawable/group-index.xml
+build/intermediates/lint-cache/maven.google/com/android/support/group-index.xml
+build/intermediates/lint-cache/maven.google/com/google/android/material/group-index.xml
+build/intermediates/lint-cache/maven.google/com/google/firebase/group-index.xml
+build/intermediates/lint-cache/maven.google/master-index.xml
+build/intermediates/lint-cache/sdk-registry.xml/sdk-registry.xml
