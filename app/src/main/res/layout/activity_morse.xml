@@ -6,6 +6,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/alphaNumericTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/grid_one"
@@ -20,6 +21,7 @@
             app:startIconDrawable="@drawable/ic_favorite">
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/alphaNumericTextEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo" />
@@ -28,11 +30,12 @@
 
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/morseTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/grid_one"
+            android:inputType="none"
             android:hint="@string/morse_label"
-            android:inputType="textMultiLine"
             app:endIconDrawable="@drawable/ic_clear"
             app:endIconMode="clear_text"
             app:helperText="@string/morse_helper_text"
@@ -42,6 +45,7 @@
             app:startIconDrawable="@drawable/ic_favorite">
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/morseTextEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/cairo" />
@@ -57,6 +61,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/grid_two"
                     android:contentDescription="@string/fab_morse_dot"
+                    app:fabSize="mini"
                     app:srcCompat="@drawable/ic_dot" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -65,7 +70,19 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/grid_two"
                     android:contentDescription="@string/fab_morse_dash"
+                    app:fabSize="mini"
                     app:srcCompat="@drawable/ic_dash" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/spaceButton"
+                    style="Widget.MaterialComponents.ExtendedFloatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/grid_two"
+                    android:contentDescription="@string/fab_morse_space"
+                    android:gravity="center"
+                    android:text="@string/extended_fab_space"
+                    android:theme="@style/MorseTheme" />
         </LinearLayout>
 
     </com.google.android.material.textfield.TextInputLayout>
