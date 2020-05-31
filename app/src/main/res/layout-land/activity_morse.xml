@@ -13,14 +13,15 @@
             android:layout_margin="@dimen/grid_one"
             android:hint="@string/alphanumeric_label"
             android:inputType="textMultiLine"
+            android:textIsSelectable="true"
             app:endIconDrawable="@drawable/ic_clear"
             app:endIconMode="clear_text"
             app:helperText="@string/alphanumeric_helper_text"
             app:helperTextEnabled="true"
+            app:layout_constraintEnd_toStartOf="@+id/playButton"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/playButton"
             app:startIconContentDescription="@string/alphanumeric_text_field_description_end_icon"
             app:startIconDrawable="@drawable/ic_visibility">
 
@@ -40,13 +41,14 @@
             android:layout_margin="@dimen/grid_one"
             android:hint="@string/morse_label"
             android:inputType="textMultiLine"
+            android:textIsSelectable="true"
             app:endIconDrawable="@drawable/ic_clear"
             app:endIconMode="clear_text"
             app:helperText="@string/morse_helper_text"
             app:helperTextEnabled="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/playButton"
             app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/playButton"
             app:layout_constraintTop_toTopOf="parent"
             app:startIconContentDescription="@string/morse_text_field_description_end_icon"
             app:startIconDrawable="@drawable/ic_visibility_off">
@@ -100,9 +102,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/grid_two"
             android:contentDescription="@string/fab_morse_play"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_play" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

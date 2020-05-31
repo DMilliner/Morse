@@ -8,6 +8,7 @@ import android.os.Vibrator
 import android.text.Editable
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
 import com.morenn.morse.utils.MorseUtils
 import com.morenn.morse.utils.VibrationUtils
@@ -75,6 +76,7 @@ class MorseActivity: AppCompatActivity() {
 
     private fun setupAlphaNumericField() {
         alphaNumericTextField.editText?.doOnTextChanged { inputText, _, _, _ ->
+
             var translatedString = ""
             for (character in inputText.toString().toCharArray()) {
                 val morseCharacter = MorseUtils().getMorseValue(character)
@@ -82,6 +84,10 @@ class MorseActivity: AppCompatActivity() {
             }
 
             morseTextEditText.setText(translatedString)
+        }
+
+        alphaNumericTextField.editText?.doAfterTextChanged {
+            alphaNumericTextEditText.setSelection(alphaNumericTextEditText.text?.length ?: 0)
         }
 
         alphaNumericTextField.setEndIconOnClickListener {
