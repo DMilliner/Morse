@@ -1,6 +1,10 @@
 package com.morenn.morse
 
+import android.content.Context
+import android.os.Build
 import android.os.Bundle
+import android.os.VibrationEffect
+import android.os.Vibrator
 import android.text.Editable
 import android.view.inputmethod.EditorInfo
 import androidx.appcompat.app.AppCompatActivity
@@ -36,6 +40,24 @@ class MorseActivity: AppCompatActivity() {
             alphaNumericTextEditText.setText(alphaNumericTextField.editText?.text.toString().plus(" "))
             decoding(morseMessage)
         }
+
+        playButton.setOnClickListener {
+            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+
+            VibrationUtils.pattern.clear()
+            VibrationUtils.pattern.add(0L)
+            for (character in morseMessage.toCharArray()) {
+                VibrationUtils().getMorseVibration(character)
+            }
+
+            val newPattern: LongArray = VibrationUtils.pattern.toLongArray()
+
+            if (Build.VERSION.SDK_INT >= 26) {
+                vibrator.vibrate(VibrationEffect.createWaveform(newPattern, -1))
+            } else {
+                vibrator.vibrate(newPattern ,-1)
+            }
+        }
     }
 
     private fun setupAlphaNumericField() {
@@ -55,7 +77,7 @@ class MorseActivity: AppCompatActivity() {
     }
 
     private fun setupMorseField() {
-        morseTextField.editText?.inputType = EditorInfo.TYPE_NULL
+//        morseTextField.editText?.inputType = EditorInfo.TYPE_NULL
         morseTextEditText.isEnabled = false
 
         morseTextField.setEndIconOnClickListener {
