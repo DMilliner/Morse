@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.morenn.morse.utils.MorseUtils
 
 class DecodingFragment: Fragment() {
 

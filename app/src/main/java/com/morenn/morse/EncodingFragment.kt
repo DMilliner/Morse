@@ -19,6 +19,10 @@ import android.widget.TextView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.morenn.morse.utils.LightUtils
+import com.morenn.morse.utils.MorseUtils
+import com.morenn.morse.utils.SoundsUtils
+import com.morenn.morse.utils.VibrationUtils
 
 private const val RECORD_REQUEST_CODE: Int = 1000
 

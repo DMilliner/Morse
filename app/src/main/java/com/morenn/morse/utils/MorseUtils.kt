@@ -1,4 +1,4 @@
-package com.morenn.morse
+package com.morenn.morse.utils
 
 class MorseUtils {
     fun getMorseValue(character: Char) : String {

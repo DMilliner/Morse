@@ -1,4 +1,4 @@
-package com.morenn.morse
+package com.morenn.morse.utils
 
 
 class VibrationUtils {
@@ -267,5 +267,4 @@ class VibrationUtils {
         pattern.add(500)
         pattern.add(250)
     }
-/////////////////////////////////////////////////////////////////////
 }

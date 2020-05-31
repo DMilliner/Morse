@@ -1,4 +1,4 @@
-package com.morenn.morse
+package com.morenn.morse.utils
 
 import android.media.AudioManager
 import android.media.ToneGenerator

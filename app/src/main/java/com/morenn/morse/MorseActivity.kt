@@ -6,14 +6,17 @@ import android.os.Bundle
 import android.os.VibrationEffect
 import android.os.Vibrator
 import android.text.Editable
-import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doOnTextChanged
+import com.morenn.morse.utils.MorseUtils
+import com.morenn.morse.utils.VibrationUtils
 import kotlinx.android.synthetic.main.activity_morse.*
 
 class MorseActivity: AppCompatActivity() {
 
     private var morseMessage: String = ""
+    private var alphaNumericMessage: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,18 +26,24 @@ class MorseActivity: AppCompatActivity() {
         setupMorseField()
 
         dotButton.setOnClickListener {
+            hideSoftKeyboard()
+
             morseMessage = morseMessage.plus("•")
             morseTextField.editText?.text = Editable.Factory.getInstance().newEditable(morseMessage)
             decoding(morseMessage)
         }
 
         dashButton.setOnClickListener {
+            hideSoftKeyboard()
+
             morseMessage = morseMessage.plus("-")
             morseTextField.editText?.text = Editable.Factory.getInstance().newEditable(morseMessage)
             decoding(morseMessage)
         }
 
         spaceButton.setOnClickListener {
+            hideSoftKeyboard()
+
             morseMessage = morseMessage.plus(" ")
             morseTextField.editText?.text = Editable.Factory.getInstance().newEditable(morseMessage)
             alphaNumericTextEditText.setText(alphaNumericTextField.editText?.text.toString().plus(" "))
@@ -42,6 +51,8 @@ class MorseActivity: AppCompatActivity() {
         }
 
         playButton.setOnClickListener {
+            hideSoftKeyboard()
+
             val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 
             VibrationUtils.pattern.clear()
@@ -77,7 +88,6 @@ class MorseActivity: AppCompatActivity() {
     }
 
     private fun setupMorseField() {
-//        morseTextField.editText?.inputType = EditorInfo.TYPE_NULL
         morseTextEditText.isEnabled = false
 
         morseTextField.setEndIconOnClickListener {
@@ -100,5 +110,10 @@ class MorseActivity: AppCompatActivity() {
         }
 
         alphaNumericTextEditText.setText(translatedString)
+    }
+
+    private fun hideSoftKeyboard() {
+        val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
     }
 }

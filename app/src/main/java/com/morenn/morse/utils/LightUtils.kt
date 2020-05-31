@@ -1,9 +1,6 @@
-package com.morenn.morse
+package com.morenn.morse.utils
 
 import android.hardware.Camera
-import android.os.Handler
-import android.hardware.Camera.Parameters.FLASH_MODE_ON
-
 
 
 class LightUtils {
