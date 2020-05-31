@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Morse</string>
+    <string name="app_name" translatable="false">Morse</string>
+
+    <string name="alphanumeric_label">Alphanumeric Text</string>
+    <string name="alphanumeric_text_field_description_end_icon">Clear Alphanumeric Text Input Field</string>
+    <string name="alphanumeric_helper_text">Enter text using letters and numerals</string>
+    <string name="morse_label">Morse Text</string>
+    <string name="morse_text_field_description_end_icon">Clear Morse Text Input Field</string>
+    <string name="morse_helper_text">Enter text using dots and dashes</string>
+    <string name="fab_morse_dot">Button to add a Morse dot</string>
+    <string name="fab_morse_dash">Button to add a Morse dash</string>
+    <string name="fab_morse_play">Button to play Morse code</string>
 </resources>
