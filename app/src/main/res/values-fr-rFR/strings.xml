@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alphanumeric_label">Texte alphanumérique</string>
+    <string name="morse_label">Code en Morse</string>
+    <string name="morse_helper_text">Saisissez un code à l\'aide de points et de tirets</string>
+    <string name="alphanumeric_helper_text">Saisissez un texte à l\'aide de lettres et de chiffres</string>
+    <string name="extended_fab_space">Espace</string>
+    <string name="alphanumeric_text_field_description_end_icon">Effacer la saisie du texte alphanumérique</string>
+    <string name="morse_text_field_description_end_icon">Effacer la saisie du code en Morse</string>
+    <string name="fab_morse_dot">"Bouton pour ajouter un point en Morse "</string>
+    <string name="fab_morse_dash">"Bouton pour ajouter un tiret en Morse "</string>
+    <string name="fab_morse_space">"Bouton pour ajouter un espace "</string>
+    <string name="fab_morse_play">" Bouton pour lire le code en Morse"</string>
+</resources>
