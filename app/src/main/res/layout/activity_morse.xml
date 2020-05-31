@@ -6,7 +6,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/alphaNumericTextField"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.MorseTheme.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/grid_one"
@@ -23,19 +23,18 @@
         <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/alphaNumericTextEditText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/cairo" />
+                android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/morseTextField"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/Widget.MorseTheme.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/grid_one"
-            android:inputType="none"
             android:hint="@string/morse_label"
+            android:inputType="none"
             app:endIconDrawable="@drawable/ic_clear"
             app:endIconMode="clear_text"
             app:helperText="@string/morse_helper_text"

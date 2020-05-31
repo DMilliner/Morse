@@ -53,6 +53,8 @@ class MorseActivity: AppCompatActivity() {
         playButton.setOnClickListener {
             hideSoftKeyboard()
 
+//            Check if the fields are empty and display an error message.
+
             val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 
             VibrationUtils.pattern.clear()

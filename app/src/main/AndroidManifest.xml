@@ -18,7 +18,8 @@
             android:supportsRtl="true"
             android:theme="@style/MorseTheme"
             android:fullBackupContent="@xml/backup_descriptor">
-        <activity android:name=".MorseActivity">
+        <activity android:name=".MorseActivity"
+                android:theme="@style/MorseTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

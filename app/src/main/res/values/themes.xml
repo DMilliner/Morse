@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="MorseTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimary" tools:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:colorSecondary" tools:targetApi="n_mr1">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <item name="android:colorBackground">@color/offWhite</item>
+        <item name="colorOnBackground">@color/white</item>
+
+        <item name="colorError">@color/white</item>
+        <item name="colorOnError">@color/white</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorAccent</item>
+
+        <item name="android:colorForeground">@color/charcoal</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/charcoal</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/charcoal</item>
+
+        <item name="android:textColor">@color/charcoal</item>
+        <item name="android:textColorPrimary">@color/charcoal</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+        <item name="android:textColorSecondary">@color/charcoal</item>
+
+        <item name="android:windowBackground">@color/offWhite</item>
+
+
+        <item name="textInputStyle">@style/Widget.MorseTheme.TextInputLayout</item>
+        <item name="textAppearanceButton">@style/AppTextAppearance.Button</item>
+    </style>
+
+    <style name="MorseTheme.NoActionBar" parent="MorseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>
