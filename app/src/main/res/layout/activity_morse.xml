@@ -18,7 +18,7 @@
             app:helperTextEnabled="true"
             app:layout_constraintTop_toTopOf="parent"
             app:startIconContentDescription="@string/alphanumeric_text_field_description_end_icon"
-            app:startIconDrawable="@drawable/ic_favorite">
+            app:startIconDrawable="@drawable/ic_visibility">
 
         <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/alphaNumericTextEditText"
@@ -41,7 +41,7 @@
             app:helperTextEnabled="true"
             app:layout_constraintTop_toBottomOf="@+id/alphaNumericTextField"
             app:startIconContentDescription="@string/morse_text_field_description_end_icon"
-            app:startIconDrawable="@drawable/ic_favorite">
+            app:startIconDrawable="@drawable/ic_visibility_off">
 
         <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/morseTextEditText"
