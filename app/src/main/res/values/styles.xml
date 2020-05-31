@@ -12,7 +12,7 @@
     </style>
 
     <style name="ThemeOverlay.MorseTheme.TextInputLayout" parent="">
-        <item name="colorPrimary">@color/colorSecondary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorOnSurface">@color/charcoal</item>
         <item name="textAppearanceSubtitle1">@style/TextAppearance.MorseTheme.Subtitle</item>
         <item name="textAppearanceCaption">@style/TextAppearance.MorseTheme.Caption</item>

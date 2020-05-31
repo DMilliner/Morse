@@ -12,4 +12,5 @@
     <string name="fab_morse_play">Button to play Morse code</string>
     <string name="fab_morse_space" />
     <string name="extended_fab_space">Space</string>
+    <string name="toolbar_title">Morse</string>
 </resources>

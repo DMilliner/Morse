@@ -4,10 +4,10 @@
     <color name="colorPrimaryDark">#025F97</color>
     <color name="colorPrimaryVariant">#1565C0</color>
 
-    <color name="colorSecondary">#558B2F</color>
-    <color name="colorSecondaryVariant">#9E9D24</color>
+    <color name="colorSecondary">#FF8F00</color>
+    <color name="colorSecondaryVariant">#FFEF6C00</color>
 
-    <color name="colorAccent">#FF8F00</color>
+    <color name="colorAccent">#558B2F</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="charcoal">#242424</color>

@@ -4,6 +4,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/alphaNumericTextField"
             style="@style/Widget.MorseTheme.TextInputLayout"
@@ -17,7 +32,7 @@
             app:endIconMode="clear_text"
             app:helperText="@string/alphanumeric_helper_text"
             app:helperTextEnabled="true"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:startIconContentDescription="@string/alphanumeric_text_field_description_end_icon"
             app:startIconDrawable="@drawable/ic_visibility">
 
@@ -49,7 +64,8 @@
                 android:id="@+id/morseTextEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/cairo" />
+                android:fontFamily="@font/cairo"
+                android:textIsSelectable="true" />
 
         <LinearLayout
                 android:layout_width="wrap_content"

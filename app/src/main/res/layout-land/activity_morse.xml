@@ -5,6 +5,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
     <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/alphaNumericTextField"
             style="@style/Widget.MorseTheme.TextInputLayout"
@@ -21,7 +36,7 @@
             app:layout_constraintEnd_toStartOf="@+id/playButton"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:startIconContentDescription="@string/alphanumeric_text_field_description_end_icon"
             app:startIconDrawable="@drawable/ic_visibility">
 
@@ -49,7 +64,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toEndOf="@+id/playButton"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:startIconContentDescription="@string/morse_text_field_description_end_icon"
             app:startIconDrawable="@drawable/ic_visibility_off">
 
@@ -57,7 +72,8 @@
                 android:id="@+id/morseTextEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/cairo" />
+                android:fontFamily="@font/cairo"
+                android:textIsSelectable="true" />
 
         <LinearLayout
                 android:layout_width="wrap_content"
@@ -104,7 +120,7 @@
             android:contentDescription="@string/fab_morse_play"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
             app:srcCompat="@drawable/ic_play" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
