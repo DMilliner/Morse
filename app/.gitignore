@@ -14,6 +14,7 @@ local.properties
 .signing/
 
 # User-specific configurations
+.idea/
 .idea/libraries/
 .idea/workspace.xml
 .idea/tasks.xml
@@ -25,6 +26,11 @@ local.properties
 .idea/modules.xml
 .idea/scopes/scope_settings.xml
 .idea/vcs.xml
+.idea/gradle.xml
+.idea/codeStyles/Project.xml
+.idea/runConfigurations.xml
+.idea/caches/build_file_checksums.ser
+
 *.iml
 
 # OS-specific files
@@ -35,14 +41,6 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-.idea/gradle.xml
-
-.idea/codeStyles/Project.xml
-
-.idea/runConfigurations.xml
-
-.idea/caches/build_file_checksums.ser
 
 app/app.iml
 build/intermediates/lint-cache/maven.google/androidx/appcompat/group-index.xml
